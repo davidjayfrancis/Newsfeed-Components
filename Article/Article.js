@@ -85,6 +85,13 @@ const data = [
     thirdParagraph: `Hodor hodor - hodor... Hodor hodor hodor hodor. Hodor. Hodor! Hodor hodor, hodor hodor hodor hodor hodor; hodor hodor? Hodor!
           Hodor hodor, HODOR hodor, hodor hodor?! Hodor! Hodor hodor, HODOR hodor, hodor hodor, hodor, hodor hodor. Hodor, hodor.
           Hodor. Hodor, hodor, hodor. Hodor hodor... Hodor hodor hodor?! Hodor, hodor... Hodor hodor HODOR hodor, hodor hodor. Hodor.`
+  },
+  {
+    title: "Schlong Brigsby",
+    date: "Today's Date",
+    firstParagraph: "This is the first paragraph",
+    secondParagraph: "Once upon a time on a street in Palo Alto...",
+    thirdParagraph: "Party on nerds!"
   }
 ];
 
@@ -119,8 +126,8 @@ function articleCreator(obj) {
   div.appendChild(span);
 
   span.addEventListener("click", e => {
-    articles.classList.toggle("article-open");
-    console.log(articles.classList);
+    div.classList.toggle("article-open");
+    console.log(div.classList);
   });
 
   title.textContent = obj.title;
